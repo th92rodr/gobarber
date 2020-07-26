@@ -19,6 +19,7 @@
     "@typescript-eslint/parser": "^3.7.0",
     "eslint": "^7.5.0",
     "eslint-import-resolver-typescript": "^2.0.0",
+    "prettier": "^2.0.5",
     "ts-node-dev": "^1.0.0-pre.56",
     "typescript": "^3.9.7"
   }
