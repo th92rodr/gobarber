@@ -1,0 +1,14 @@
+{
+  "name": "gobarber",
+  "version": "1.0.0",
+  "main": "",
+  "repository": "https://github.com/th92rodr/gobarber.git",
+  "author": "Thiago Rodrigues",
+  "license": "",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
