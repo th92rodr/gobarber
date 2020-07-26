@@ -1,14 +1,19 @@
 {
   "name": "gobarber",
   "version": "1.0.0",
-  "main": "",
+  "main": "server.ts",
   "repository": "https://github.com/th92rodr/gobarber.git",
   "author": "Thiago Rodrigues",
   "license": "",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.7",
     "typescript": "^3.9.7"
   }
 }
