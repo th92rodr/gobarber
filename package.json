@@ -12,6 +12,7 @@
     "pretty": "prettier --config .prettierrc.json --write \"./src/**/*.{ts,js}\""
   },
   "dependencies": {
+    "date-fns": "^2.15.0",
     "express": "^4.17.1",
     "uuidv4": "^6.2.3"
   },
