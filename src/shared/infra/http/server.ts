@@ -2,8 +2,10 @@ import 'reflect-metadata';
 import 'express-async-errors';
 import express, { Request, Response, NextFunction } from 'express';
 
-import routes from './routes';
+import '@shared/container';
 import '@shared/infra/typeorm';
+
+import routes from './routes';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
 
