@@ -105,3 +105,4 @@ dist
 
 tmp/*
 !tmp/.gitkeep
+!tmp/uploads/.gitkeep
