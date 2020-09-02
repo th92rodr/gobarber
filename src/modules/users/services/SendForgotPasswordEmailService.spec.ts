@@ -9,7 +9,6 @@ import FakeMailProvider from '@shared/container/providers/MailProvider/fakes/Fak
 let fakeUsersRepository: FakeUsersRepository;
 let fakeUserTokensRepository: FakeUserTokensRepository;
 let fakeMailProvider: FakeMailProvider;
-
 let sendForgotPasswordEmail: SendForgotPasswordEmailService;
 
 describe('Send Forgot Password Email', () => {
