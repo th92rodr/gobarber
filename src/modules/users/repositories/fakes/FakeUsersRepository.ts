@@ -3,6 +3,7 @@ import { uuid } from 'uuidv4';
 import User from '@modules/users/infra/typeorm/entities/User';
 import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
+import IFindAllProvidersDTO from '@modules/users/dtos/IFindAllProvidersDTO';
 
 class FakeUsersRepository implements IUsersRepository {
   private users: User[] = [];
@@ -13,6 +14,16 @@ class FakeUsersRepository implements IUsersRepository {
 
   public async findByEmail(email: string): Promise<User | undefined> {
     return this.users.find(user => user.email === email);
+  }
+
+  public async findAllProviders({
+    exceptUserId,
+  }: IFindAllProvidersDTO): Promise<User[]> {
+    if (exceptUserId) {
+      return this.users.filter(user => user.id !== exceptUserId);
+    } else {
+      return this.users;
+    }
   }
 
   public async create(userData: ICreateUserDTO): Promise<User> {
