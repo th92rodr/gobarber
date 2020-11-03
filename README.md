@@ -75,5 +75,3 @@ npm run test:coverage
 ## License
 
 This project is under the license [MIT](./LICENSE).
-
----
